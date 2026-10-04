@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Integrada - Stitch & Genspark</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-950/50 backdrop-blur py-4 px-6">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="text-lg font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                ✨ Mi Aplicación Web
+            </h1>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full border border-slate-700">
+                Stitch + Genspark + GitHub
+            </span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-6 w-full flex-grow flex items-center justify-center">
+        <div class="bg-slate-800/50 border border-slate-700/60 rounded-2xl p-8 shadow-xl text-center w-full max-w-lg backdrop-blur">
+            <h2 class="text-2xl font-bold mb-3 text-white">¡Todo listo para desplegar!</h2>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                Este código combina la interfaz optimizada y el contenido generado por tus herramientas de IA. Súbelo a GitHub para verlo en línea.
+            </p>
+            <button onclick="ejecutarAccion()" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-4 rounded-xl transition shadow-lg shadow-indigo-600/20">
+                Ver Estado de Conexión
+            </button>
+            <div id="resultado" class="mt-4 text-sm font-medium text-cyan-400"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
+        Control de versiones sincronizado con GitHub.
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
